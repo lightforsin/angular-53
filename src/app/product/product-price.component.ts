@@ -2,9 +2,9 @@ import { Component, OnInit, Input } from '@angular/core';
 import { Product } from './product.model';
 
 @Component({
-  selector: 'price-display',
+  selector: 'product-price',
   template: '<div class="price-display">\${{ price }}</div>'
 })
-export class PriceDisplayComponent {
+export class ProductPriceComponent {
   @Input() price: number;
 }

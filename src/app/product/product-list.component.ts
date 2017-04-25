@@ -4,23 +4,15 @@ import { Product } from './product.model';
 @Component({
     selector: 'product-list',
     template: `
+    <div class="ui items">
         <product-row 
             *ngFor="let product of productList"
             [product]="product"
             (click)="selectProduct(product)"
-            [class.selected]="isSelected(myProduct)">
-                <h1>{{ product.name }}</h1>
-                <span>{{ product.sku }}</span>
+            [class.selected]="isSelected(product)">
         </product-row>
-    `,
-    styles: [`
-        .productItem {
-            border: solid 1px #acacac;
-            padding: 20px;
-            margin-bottom: 10px;
-            background-color: #fafafa;
-        }
-    `]
+    </div>
+    `
 })
 export class ProductListComponent {
     @Input() productList: Product[];

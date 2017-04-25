@@ -10,15 +10,7 @@ import { Product } from '../product/product.model';
                 (onProductSelected)="productWasSelected($event)">
             </product-list>
         </div>
-    `,
-    styles: [`
-        .productItem {
-            border: solid 1px #acacac;
-            padding: 20px;
-            margin-bottom: 10px;
-            background-color: #fafafa;
-        }
-    `]
+    `
 })
 export class InventoryAppComponent {
 
