@@ -4,6 +4,7 @@ import { Product } from './product.model';
 @Component({
     selector: 'product-list',
     template: `
+    <sku></sku>
     <div class="ui items">
         <product-row 
             *ngFor="let product of productList"
