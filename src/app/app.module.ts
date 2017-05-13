@@ -11,7 +11,7 @@ import { ProductRowComponent } from './product/product-row.component';
 import { ProductImageComponent } from './product/product-image.component';
 import { ProductDepartmentComponent } from './product/product-department.component';
 import { ProductPriceComponent } from './product/product-price.component';
-import { SkuComponent } from './forms/sku.component';
+import { SkuComponent, SkuComponentBuilder } from './forms/sku.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +23,8 @@ import { SkuComponent } from './forms/sku.component';
     ProductImageComponent,
     ProductDepartmentComponent,
     ProductPriceComponent,
-    SkuComponent
+    SkuComponent,
+    SkuComponentBuilder
   ],
   imports: [
     BrowserModule,
